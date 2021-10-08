@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +13,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'LotteryController@index')->name('index');
+Route::get('/lottery/code', 'LotteryController@code')->name('lotteryCode');

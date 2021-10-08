@@ -1,0 +1,298 @@
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, p, input, button { padding: 0; margin: 0; }
+
+h1, h2, h3, h4, h5, h6, address, caption, em, strong, table, th, td { font-size: 1em; font-style: normal; font-weight: normal; }
+
+ul, ol { list-style: none;}
+
+img { border: 0; display: block; width: 100%; height: auto;}
+
+body { font: 14px/20px "Hiragino Sans GB", "Microsoft Yahei", arial, 宋体, "Helvetica Neue", Helvetica, STHeiTi, sans-serif; color: #666; }
+
+input {
+	background:none;  
+	outline:none;  
+	border:none;
+}
+
+button {
+	background: none; 
+	border: 0px;
+	outline: none;
+}
+
+::-webkit-input-placeholder { color:#bbb; }
+::-moz-placeholder { color:#bbb; } 
+:-ms-input-placeholder { color:#bbb; } 
+input:-moz-placeholder { color:#bbb; }
+
+html {
+	overflow-y: scroll;
+	moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-o-user-select:none;
+	-khtml-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+
+a {
+	color: #8c8989;
+}
+
+body {
+	background: #f7f7f7;
+}
+
+.mainWid {
+	width: 1200px;
+	margin: 0 auto;
+}
+ 
+/* 头部 */
+#header {
+	width: 100%;
+	height: 100px;
+	background: #333333;
+}
+
+.topBox {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.logo {
+	width: 320px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.topBox h1 {
+	padding-top: 10px;
+	color: #fff;
+	font-size: 34px;
+	margin-left: 20px;
+}
+
+/* 内容区 */
+#main {
+	margin: 40px auto;
+}
+
+.menuBox {
+	width: 100%;
+	border-bottom: 1px solid #bbbaba;
+}
+
+.menu {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 1px;
+}
+
+.menu li {
+	width: 150px;
+	height: 38px;
+	line-height: 38px;
+	overflow: hidden;
+	box-sizing: border-box;
+	text-align: center;
+	border: 1px solid #bbbaba;
+	font-size: 17px;
+	cursor: pointer;
+	border-radius: 10px 10px 0px 0px;
+	position: relative;
+}
+
+.menu li.active {
+	background: #C3143B;
+	color: #fff;
+	border-color: #C3143B;
+}
+
+.menu li:nth-child(2) {
+	left: -1px;
+}
+
+.menu li:nth-child(3) {
+	left: -2px;
+}
+
+.menu li:nth-child(4) {
+	left: -3px;
+}
+
+.listBox>div {
+	width: 900px;
+	margin: 30px auto 0;
+	display: none;
+}
+
+.listBox>div.active {
+	display: block;
+}
+
+.ruleBox {
+	font-size: 16px;
+}
+
+.ruleBox h2 {
+	text-align: center;
+}
+
+.ruleForm {
+	width: 600px;
+	margin: 10px auto;
+	font-size: 15px;
+	box-sizing: border-box;
+}
+
+.ruleForm>div {
+	display: flex;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	align-items: center;
+}
+
+.ruleForm>div:last-child {
+	padding-top: 15px;
+}
+
+.ruleForm>div>label {
+	width: 150px;
+	text-align: right;
+	margin-right: 40px;
+}
+
+.ruleForm>div>input {
+	width: 200px;
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 0 10px;
+}
+
+.ruleForm>div>p {
+	width: 100px;
+	height: 100%;
+	margin-left: 20px;
+	font-size: 14px;
+	color: #fff;
+	display: none;
+}
+
+.ruleForm .codeBtn {
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 10px;
+	border: 1px solid #b5b3b3;
+	background: #3c8dbc;
+	margin-left: 190px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.lotyTab {
+	width:100%;
+	margin-top: 25px;
+}
+
+.lotyTab>.tabHead,
+.lotyTab>.tabMain {
+	width: 600px;
+	margin: 0 auto;
+	font-size: 15px;
+}
+
+.lotyTab>.tabMain {
+	color: #8c8989;
+}
+
+.lotyTab>.tabHead {
+	display: flex;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #3c8dbc;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.lotyTab>.tabHead>div {
+	height: 100%;
+	box-sizing: border-box;
+	border-right: 1px solid #fff;
+}
+
+.lotyTab>.tabHead>div:first-child {
+	width: 180px;
+}
+
+.lotyTab>.tabHead>div:last-child {
+	width: 200px;
+	border: none;
+}
+
+.tabMain>li {
+	display: flex;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px dotted #d8d5d5;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.tabMain>li>div {
+	text-align: center;
+}
+
+.tabMain>li>div:first-child {
+	width: 180px;
+}
+
+.tabMain>li>div:nth-child(2) {
+	width: 200px;
+}
+
+.tabMain>li>a {
+	display: inline-block;
+	width: 180px;
+	text-align: center;
+}
+
+/* 尾部 */
+#footer {
+	width: 100%;
+	height: 60px;
+	background: #fff;
+	border-top: 1px solid #bbbaba;
+}
+#footer p {
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,316 @@
+html {font-size: 12px;}
+@media (max-width: 360px) { html {font-size: 10px;} }
+@media (min-width: 375px) { html {font-size: 12px;} }
+@media (min-width: 414px) { html {font-size: 14px;} }
+@media (min-width: 768px) { html {font-size: 16px;} }
+
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+html {
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+html, body, div, ul, h1, h2, h3, p, input, button {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	background: #d13741;
+	overscroll-behavior-y: contain;
+}
+
+img {
+    width: 100%;
+    display: block;
+	pointer-events: none;
+}
+
+input{  
+	background: none;  
+	outline: none;  
+	border: none;
+	-webkit-appearance:none; 
+}
+ 
+button {
+	border: 1px solid transparent;
+	outline: none;
+}
+
+.body {
+	width: 100%;
+	height: 31rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.main {
+	width: 94%;
+	height: 30rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	background: url(/storage/images/bg_3.png) no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#lottery {
+	display: block;
+	width: 76%;
+	height: 22.5rem;
+	position: absolute;
+}
+
+#lottery li {
+	display: block;
+	width: 32%;
+	height: 7.1rem;
+	line-height: 7.1rem;
+	font-size: 1.4rem;
+	color: #eee;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	background: #d31624;
+	box-sizing: border-box;
+	border-radius: 5px;
+	/* box-shadow: 1px 1px 1px #73020b; */
+}
+
+#lottery li.active {
+	border: 3px solid #9303f5;
+}
+
+#lottery li:nth-of-type(2) {
+	left: 34%;
+	top: 0; 
+}
+
+#lottery li:nth-of-type(3) {
+	left: 68%;
+	top: 0; 
+}
+
+#lottery li:nth-of-type(4) {
+	left: 68%;
+	top: 7.7rem; 
+}
+
+#lottery li:nth-of-type(5) {
+	left: 68%;
+	top: 15.4rem; 
+}
+
+#lottery li:nth-of-type(6) {
+	left: 34%;
+	top: 15.4rem; 
+}
+
+#lottery li:nth-of-type(7) {
+	left: 0;
+	top: 15.4rem; 
+}
+
+#lottery li:nth-of-type(8) {
+	left: 0;
+	top: 7.7rem;
+}
+
+#lottery li:nth-of-type(9) {
+	left: 34%;
+	top: 7.7rem;
+	background: gold;
+	font-size: 2.6rem;
+	color: #f00;
+	font-weight: bold;
+}
+
+#lottery li img {
+	height: 100%;
+}
+
+/* 尾部 */
+.footer {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.footer h1 {
+	font-size: 1.5rem;
+	margin-bottom: .5rem;
+	color: gold;
+}
+
+.footer p {
+	font-size: 1.3rem;
+	margin-bottom: .5rem;
+}
+
+/* 弹窗 */
+.mask {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	position: fixed;
+	overflow: hidden;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup {
+	width: 90%;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.popup .title {
+	width: 100%;
+	height: 4rem;
+	line-height: 4rem;
+	font-size: 1.8rem;
+	color: #f13541;
+	text-align: center;
+	margin-top: .5rem;
+	padding-bottom: .5rem;
+	border-bottom: 1px dotted #c7c5c5;
+	letter-spacing: .1rem;
+}
+
+.popup .codeBox {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.popup .codeBox .inpVal {
+	width: 70%;
+	box-sizing: border-box;
+	line-height: 5rem;
+	border-radius: 0.5rem;
+	border: .1px solid #d6d4d4;
+	background: #e8e7e7;
+	padding: 0 .5rem;
+	text-align: center;
+	color: #000;
+	font-size: 1.6rem;
+	margin-top: 1.4rem;
+}
+
+.popup .codeBox .tips {
+	color: #f90404;
+	margin: 0.2rem 0;
+	width: 70%;
+	height: 2rem;
+	line-height: 2rem;
+	overflow: hidden;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.popup .codeBox button {
+	width: 40%;
+	line-height: 4rem;
+	border-radius: .5rem;
+	margin: 1.4rem 0 1rem;
+	background: #f13541;
+	color: #fff;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+.prizeBox,
+.btnCon,
+.lotteryEnd {
+	display: none;
+}
+
+.prizeImg {
+	width: 100%;
+	margin-top: .5rem;
+}
+
+.prizeImg p {
+	width: 30%;
+	height: 7rem;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.priCurImg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.prizeTxt {
+	width: 100%;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	color: #f00;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.lotteryEnd {
+	width: 100%;
+	height: 8rem;
+	line-height: 8rem;
+	color: #f00;
+	text-align: center;
+	font-size: 2.4rem;
+	font-weight: bold;
+	letter-spacing: .2rem;
+}
+
+.btnCon {
+	width: 80%;
+	height: 4.2rem;
+	line-height: 4.2rem;
+	text-align: center;
+	border-radius: 10px;
+	color: #fff;
+	margin: 1rem auto 1.5rem;
+	background: #f00;
+	font-size: 1.8rem;
+	box-shadow: 1px 1px 1px #b50202;
+}
+
+.btnConDis {
+	background: #c7c6c6;
+	box-shadow: 1px 1px 1px #c7c6c6;
+}
+
+
+
